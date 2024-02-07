@@ -2,7 +2,7 @@
 
 ### Purpose of the Report
 Explain the importance of selecting the appropriate wireless protocol for IoT devices.
-State the goal of the report, which is to compare WiFi, Bluetooth, Bluetooth LE, Zigbee, Z-Wave, and NFC based on specific parameters.
+State the goal of the report, which is to compare WiFi, Bluetooth, Bluetooth LE, Zigbee, Z-Wave, and NFC based on specific parameters. 
 
 ### Areas to Investigate
 - Protocol Cverwiev
