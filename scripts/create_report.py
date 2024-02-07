@@ -20,7 +20,7 @@ def main():
     
     first_replacement = True
     # List of protocol names to replace in the stub
-    protocols = ['WIFI', 'BLUETOOTH', 'BLUETOOTH LE', 'ZIGBEE', 'ZWAVE', 'NFC']
+    protocols = ['WIFI', 'BLUETOOTH', 'BLUETOOTH_LE', 'ZIGBEE', 'ZWAVE', 'NFC']
     
     # Replace each placeholder with the corresponding markdown content
     for protocol in protocols:
@@ -28,7 +28,7 @@ def main():
         # Add a new line between each markdown file content
         if first_replacement:
             # For the first replacement, remove the leading newline to avoid an extra line at the beginning
-            content = content.lstrip("\n")
+            content = content.lstrip("\n<br/>\n")
             first_replacement = False
         report_content = report_content.replace(f'{{{protocol}}}', content)
     

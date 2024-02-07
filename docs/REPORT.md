@@ -1,8 +1,11 @@
 # Wireless Protocols Report
 
 ### Purpose of the Report
-Explain the importance of selecting the appropriate wireless protocol for IoT devices.
-State the goal of the report, which is to compare WiFi, Bluetooth, Bluetooth LE, Zigbee, Z-Wave, and NFC based on specific parameters. 
+This report aims to guide in selecting wireless communication protocols for IoT
+devices, focusing on efficiency, cost, scalability, and reliability. We compare
+WiFi, Bluetooth, Bluetooth LE, Zigbee, Z-Wave, and NFC across various parameters
+such as range, data rate, power consumption, and security, to aid stakeholders
+in making informed decisions for IoT applications.
 
 ### Areas to Investigate
 - Protocol Cverwiev
@@ -138,3 +141,23 @@ Some text...
 1) List item
 2) List item
 3) List item
+
+<BR>
+
+## Report Summary
+
+- **WiFi** emerges as the go-to choice for high-bandwidth applications requiring internet access, 
+although at the cost of higher power consumption.
+- **Bluetooth** and **Bluetooth LE** offer versatility, with BLE being particularly advantageous 
+for battery-operated devices due to its low energy profile.
+- **Zigbee** and **Z-Wave** stand out in creating extensive, low-power mesh networks, 
+ideal for home automation and sensor networks.
+- **NFC** offers a unique niche in close-proximity, secure transactions and data exchange.
+
+### Conclusion: Choosing the Right Wireless Protocol for IoT
+
+Selecting a wireless protocol is crucial, with each serving specific IoT needs.
+The choice hinges on application, range, throughput, power, and interoperability.
+This report aims to help IoT developers in making protocol choices, the key to efficient and
+scalable IoT solutions. Embracing the right protocol is strategic, essential for
+IoT innovation and advancement.
