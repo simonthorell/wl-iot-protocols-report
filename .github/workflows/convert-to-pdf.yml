@@ -32,7 +32,7 @@ jobs:
           git config user.email "github-actions@github.com"
           git add docs/REPORT.md
           git commit -m "Update REPORT.md with latest protocols" || echo "No changes to REPORT.md."
-          git push
+          git push --force
 
   # Second job: Convert REPORT.md to PDF
   converttopdf:
@@ -58,7 +58,7 @@ jobs:
         run: |
           git rm -r pdfs
           git commit -m "Remove existing pdfs folder"
-          git push
+          git push --force
 
       - uses: baileyjm02/markdown-to-pdf@v1.2.0
         with:
@@ -74,4 +74,4 @@ jobs:
           git add pdfs/
           git status
           git commit -m "Automated commit of PDF and HTML files" -a || echo "No changes to commit."
-          git push
+          git push --force
