@@ -1,0 +1,25 @@
+# Wireless Protocols Report
+
+### Purpose of the Report
+Explain the importance of selecting the appropriate wireless protocol for IoT devices.
+State the goal of the report, which is to compare WiFi, Bluetooth, Bluetooth LE, Zigbee, Z-Wave, and NFC based on specific parameters.
+
+### Areas to Investigate
+- Protocol Cverwiev
+- Range
+- Power Consumption
+- Security
+- Other Considerations for IoT
+
+### Authors
+Simon Thorell, Erik Pettersson, Nathan Tewelde Bahta, Milad Isho Saeb and Abdihakim Abdisamad Roble.
+
+### Download the report: [PDF](https://github.com/simonthorell/wl-protocols-report/pdfs/REPORT.pdf)
+  
+  
+{WIFI}
+{BLUETOOTH}
+{BLUETOOTH LE}
+{ZIGBEE}
+{ZWAVE}
+{NFC}
