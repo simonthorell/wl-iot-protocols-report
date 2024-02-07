@@ -56,7 +56,7 @@ jobs:
         # Remove the old PDFs
       - name: Remove Outdated PDFs
         run: |
-          git rm -r pdfs
+          git rm -r --force pdfs
           git commit -m "Remove existing pdfs folder"
           git push --force
 
