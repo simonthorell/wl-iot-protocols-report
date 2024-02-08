@@ -1,64 +1,76 @@
 name: Build PDF
 on:
-  push:
+  pull_request:
     branches: [main]
+    types: [opened, synchronize, reopened, labeled, unlabeled]
     paths:
-      - 'docs/REPORT.md'
-      - 'docs/images/**'
       - 'protocols/**.md'
+      - 'docs/REPORT.stub'
+      - 'docs/images/**'
+      - '.github/workflows/convert-to-pdf.yml'
 
 jobs:
-  # First job: Update REPORT.md
-  update-report:
+  merge-markdown-files: # First job: Merge markdown files
+    name: Merge Markdown Files
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      
-      - uses: actions/setup-python@v2
+      - name: Print Branch Names (for debugging purposes)
+        run: |
+          echo "The baseref is $GITHUB_BASE_REF"
+          echo "The headref is $GITHUB_HEAD_REF"
+
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.x' # Adjust as needed
+          python-version: 'pypy3.9' # Set to latest possible
 
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
           # Install any dependencies if needed
 
-      - name: Generate Report
-        run: python scripts/create_report.py
+      - name: Checkout PR Head Branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0 # Fetch all history for .Git based projects
 
-      - name: Commit and Push Updated Report
+      - name: Generate Report
+        run: python ./scripts/create_report.py # For 'on' try without './' if it doesn't work
+
+      - name: Set up Git and Commit Changes
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add docs/REPORT.md
           git commit -m "Update REPORT.md with latest protocols" || echo "No changes to REPORT.md."
-          git push --force
-
-  # Second job: Convert REPORT.md to PDF
-  converttopdf:
-    name: Markdown to PDF
-    needs: update-report
+          git push origin ${{ github.head_ref }}
+  
+  convert-to-pdf: # Second job: Convert REPORT.md to PDF
+    name: Convert to PDF
+    needs: merge-markdown-files
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
-          # Ensures the action can push back to the repository
-          persist-credentials: true
+          persist-credentials: true # Ensures the action can push back to the repository
           fetch-depth: 0 # Fetch all history for .Git based projects
-
-      # Configure Git
-      - name: Configure Git
+      
+      - name: Checkout to Git Feature Branch
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git pull
-        
-        # Remove the old PDFs
+          git fetch origin ${{ github.head_ref }}
+          git checkout ${{ github.head_ref }}
+
       - name: Remove Outdated PDFs
         run: |
-          git rm -r --force pdfs
-          git commit -m "Remove existing pdfs folder"
-          git push --force
+          if [ -d "./pdfs" ]; then
+            git rm -r ./pdfs
+            git commit -m "Remove existing pdfs folder"
+            git push origin ${{ github.head_ref }}
+          else
+            echo "pdfs folder does not exist, skipping removal."
+          fi
 
       - uses: baileyjm02/markdown-to-pdf@v1.2.0
         with:
@@ -67,11 +79,9 @@ jobs:
           images_dir: docs/images
           image_import: ./images
           build_html: false
-
-      # Commit and Push
+      
       - name: Commit and Push PDF and HTML to main branch
         run: |
           git add pdfs/
-          git status
           git commit -m "Automated commit of PDF and HTML files" -a || echo "No changes to commit."
-          git push --force
+          git push origin ${{ github.head_ref }}
