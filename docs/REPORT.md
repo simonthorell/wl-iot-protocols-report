@@ -192,6 +192,11 @@ Some text...
 3) List item
 <br><br>
 
+## Diagrams
+![Range](./images/protocols_range.png)
+![Data Rate](./images/protocols_datarate.png)
+![Frequency](./images/protocols_frequency.png)
+
 ### Protocol Summaries
 
 - **WiFi** emerges as the go-to choice for high-bandwidth applications requiring internet access, 
