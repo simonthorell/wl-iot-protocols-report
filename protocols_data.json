@@ -9,7 +9,7 @@
       {
         "name": "Zigbee",
         "frequency": "2.4 GHz",
-        "range": "10-100 meters",
+        "range": "10-250 meters",
         "dataRate": "250 Kbps"
       },
       {
