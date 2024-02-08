@@ -27,7 +27,6 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          # Install any dependencies if needed
 
       - name: Checkout PR Head Branch
         uses: actions/checkout@v4
@@ -46,9 +45,65 @@ jobs:
           git commit -m "Update REPORT.md with latest protocols" || echo "No changes to REPORT.md."
           git push origin ${{ github.head_ref }}
   
+  generate-diagrams:
+    name: Generate Diagrams
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 'pypy3.9' # Adjust Python version as necessary
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install matplotlib
+      
+      - name: Checkout PR Head Branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0 # Fetch all history for .Git based projects
+
+      - name: Checkout to Git Feature Branch
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git fetch origin ${{ github.head_ref }}
+          git checkout ${{ github.head_ref }}
+  
+      - name: Remove Outdated Diagrams
+        run: |
+          if [ -d "./images" ]; then
+            git rm -r ./images/protocols_datarate.png
+            git rm -r ./images/protocols_frequency.png
+            git rm -r ./images/protocols_range.png
+            git commit -m "Remove existing pdfs folder"
+            git push origin ${{ github.head_ref }}
+          else
+            echo "images folder does not exist, skipping removal."
+          fi
+
+      - name: Generate Diagrams
+        run: |
+          if [ ! -d "./images" ]; then
+            mkdir images
+          else
+            echo "images folder already exists, skipping creation."
+          fi
+          python ./scripts/create_diagram.py
+
+      - name: Set up Git and Commit Changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add images/
+          git commit -m "Created diagrams and saved to images-folder" || echo "No diagrams to create"
+          git push origin ${{ github.head_ref }}
+
   convert-to-pdf: # Second job: Convert REPORT.md to PDF
     name: Convert to PDF
-    needs: merge-markdown-files
+    needs: [merge-markdown-files, generate-diagrams]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -77,7 +132,7 @@ jobs:
         with:
           input_dir: docs
           output_dir: pdfs
-          images_dir: docs/images
+          images_dir: images
           image_import: ./images
           build_html: false # Set true to also add HTML files to the output directory
       

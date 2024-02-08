@@ -1,7 +1,7 @@
 # Wireless IoT Protocol Report
 
 This repo is a setup to enable collaboration work in the same report using markdown formatting.  
-The CI pipeline is setup to automatically merge the markdown-files and generate a PDF once making a pull request to the main branch.
+The CI pipeline is setup to automatically create diagrams using python matplotlib, merge the markdown-files and then generate a PDF once making a pull request to the main branch.
 
 ## Usage
 1) Clone this repo:
