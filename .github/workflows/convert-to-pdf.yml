@@ -4,9 +4,10 @@ on:
     branches: [main]
     types: [opened, synchronize, reopened, labeled, unlabeled]
     paths:
-      - 'protocols/**.md'
+      - 'docs/REPORT.md'
       - 'docs/REPORT.stub'
       - 'docs/images/**'
+      - 'protocols/**.md'
       - '.github/workflows/convert-to-pdf.yml'
 
 jobs:
@@ -78,10 +79,10 @@ jobs:
           output_dir: pdfs
           images_dir: docs/images
           image_import: ./images
-          build_html: false
+          build_html: false # Set true to also add HTML files to the output directory
       
-      - name: Commit and Push PDF and HTML to main branch
+      - name: Commit and Push PDF to Main
         run: |
           git add pdfs/
-          git commit -m "Automated commit of PDF and HTML files" -a || echo "No changes to commit."
+          git commit -m "Automated PDF Creation" -a || echo "No changes to commit."
           git push origin ${{ github.head_ref }}
