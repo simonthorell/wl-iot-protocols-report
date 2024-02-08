@@ -1,4 +1,4 @@
-# Wireless Protocols Report
+# Wireless IoT Protocol Report
 
 ### Purpose of the Report
 This report aims to guide in selecting wireless communication protocols for IoT
@@ -20,7 +20,7 @@ Milad Isho Saeb and Abdihakim Abdisamad Roble.
 
 ### Download the report: [PDF](https://github.com/simonthorell/wl-protocols-report/pdfs/REPORT.pdf)
 
-<br>
+<br><br>
 ## WIFI
 
 Here is some text...
