@@ -1,4 +1,4 @@
-# Wireless Protocols Report
+# Wireless IoT Protocol Report
 
 ### Purpose of the Report
 This report aims to guide in selecting wireless communication protocols for IoT
