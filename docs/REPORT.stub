@@ -19,14 +19,19 @@ Simon Thorell, Erik Pettersson, Nathan Tewelde Bahta,
 Milad Isho Saeb and Abdihakim Abdisamad Roble.
 
 ### Download the report: [PDF](https://github.com/simonthorell/wl-protocols-report/pdfs/REPORT.pdf)
-  
-{WIFI}
-{BLUETOOTH}
-{BLUETOOTH_LE}
-{ZIGBEE}
-{ZWAVE}
-{NFC}
 
+<BR>
+{WIFI}
+<BR>
+{BLUETOOTH}
+<BR>
+{BLUETOOTH_LE}
+<BR>
+{ZIGBEE}
+<BR>
+{ZWAVE}
+<BR>
+{NFC}
 <BR>
 
 ### Protocol Summaries
