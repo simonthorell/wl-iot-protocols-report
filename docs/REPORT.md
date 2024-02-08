@@ -20,7 +20,7 @@ Milad Isho Saeb and Abdihakim Abdisamad Roble.
 
 ### Download the report: [PDF](https://github.com/simonthorell/wl-protocols-report/pdfs/REPORT.pdf)
 
-<BR>
+<br><br>
 ## WIFI
 
 Here is some text...
@@ -45,7 +45,7 @@ Some text...
 1) List item
 2) List item
 3) List item
-<BR>
+<br><br>
 ## Bluetooth
 
 Here is some text...
@@ -70,7 +70,7 @@ Some text...
 1) List item
 2) List item
 3) List item
-<BR>
+<br><br>
 ## Bluetooth LE
 
 Bluetooth Low Energy (Bluetooth LE, colloquially BLE, formerly marketed as Bluetooth Smart) is a wireless personal area network technology designed and marketed by the Bluetooth Special Interest Group (Bluetooth SIG) aimed at novel applications in the healthcare, fitness, beacons, security, and home entertainment industries. Compared to Classic Bluetooth, Bluetooth LE is intended to provide considerably reduced power consumption and cost while maintaining a similar communication range.
@@ -105,7 +105,7 @@ Bluetooth LE is highly suitable for Internet of Things (IoT) applications due to
 3) Community and Support: A broad community and robust ecosystem of tools and libraries support BLE development.
   
 This technology's combination of low power consumption, robust security features, and widespread support makes Bluetooth LE an excellent choice for developing a wide range of IoT applications.
-<BR>
+<br><br>
 ## Zigbee
 
 Here is some text...
@@ -130,7 +130,7 @@ Some text...
 1) List item
 2) List item
 3) List item
-<BR>
+<br><br>
 ## Z-Wave
 
 Z-Wave is a wireless communications protocol used primarily for home automation. It is designed to allow smart devices to communicate with each other within the home via low-energy radio waves. Developed by Zensys, a Danish company, it is now managed by the Z-Wave Alliance, a consortium of over 700 companies dedicated to the development of Z-Wave technology.
@@ -165,7 +165,7 @@ Z-Wave is particularly well-suited for smart home and IoT applications due to:
 3) Dedicated Frequency: Operates on a dedicated frequency band (typically 908.42 MHz in the US, varying by country), reducing interference from other wireless devices.
 
 Z-Wave's combination of low power consumption, strong security measures, and extensive interoperability makes it a preferred choice for smart home automation and IoT ecosystems.
-<BR>
+<br><br>
 ## NFC
 
 Here is some text...
@@ -190,7 +190,7 @@ Some text...
 1) List item
 2) List item
 3) List item
-<BR>
+<br><br>
 
 ### Protocol Summaries
 
