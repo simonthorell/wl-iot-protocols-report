@@ -185,18 +185,18 @@ This is changed through the trust center settings.
 
 ### Pros & Cons
 Pros:
-    -   low power consumption
-    -   high scaleability upwards to 60000 units.
-    -   backed by big companies and used by big companies
-    -   secure connections (CIA)
-    -   costs less than other devices using for example Z-Wave
+- low power consumption
+- high scaleability upwards to 60000 units.
+- backed by big companies and used by big companies
+- secure connections (CIA)
+- costs less than other devices using for example Z-Wave
 
-Cons:
-    -   low data rate transfer
-    -   short range
-    -   interupted signal if there are obstacles
-    -   latency with more devices
-    -   may need complex knowledge to use to it full potential
+Cons: 
+- low data rate transfer
+- short range
+- interupted signal if there are obstacles
+- latency with more devices
+- may need complex knowledge to use to it full potential
 
 ### Conclusion
 Zigbee as a protocol should mainly be used for low data rate transmissions such as home automation for
