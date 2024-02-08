@@ -83,7 +83,7 @@ Pros:
 - secure connections (CIA)
 - costs less than other devices using for example Z-Wave
 
-Cons:
+Cons: 
 - low data rate transfer
 - short range
 - interupted signal if there are obstacles
