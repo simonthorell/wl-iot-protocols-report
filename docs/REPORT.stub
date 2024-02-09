@@ -8,7 +8,7 @@ such as range, data rate, power consumption, and security, to aid stakeholders
 in making informed decisions for IoT applications.
 
 ### Areas to Investigate
-- Protocol Cverwiev
+- Protocol Overwiev
 - Range
 - Power Consumption
 - Security
@@ -18,9 +18,8 @@ in making informed decisions for IoT applications.
 Simon Thorell, Erik Pettersson, Nathan Tewelde Bahta, 
 Milad Isho Saeb and Abdihakim Abdisamad Roble.
 
-### Download the report: [PDF](https://github.com/simonthorell/wl-protocols-report/pdfs/REPORT.pdf)
+## 
 
-<br><br>
 {WIFI}
 <br><br>
 {BLUETOOTH}
@@ -32,15 +31,10 @@ Milad Isho Saeb and Abdihakim Abdisamad Roble.
 {ZWAVE}
 <br><br>
 {NFC}
-<br><br>
 
-## Diagrams
-![Range](./images/protocols_range.png)
-![Data Rate](./images/protocols_datarate.png)
-![Frequency](./images/protocols_frequency.png)
+## 
 
-### Protocol Summaries
-
+## Protocol Summary
 - **WiFi** emerges as the go-to choice for high-bandwidth applications requiring internet access, 
 although at the cost of higher power consumption.
 - **Bluetooth** and **Bluetooth LE** offer versatility, with BLE being particularly advantageous 
@@ -49,10 +43,84 @@ for battery-operated devices due to its low energy profile.
 ideal for home automation and sensor networks.
 - **NFC** offers a unique niche in close-proximity, secure transactions and data exchange.
 
-### Conclusion: Choosing the Right Wireless Protocol for IoT
+The diversity in wireless communication protocols is highlighted by their range, data rate, 
+and frequency utilization, each catering to specific application needs within the IoT ecosystem.
 
+### Range Insights
+The range of a protocol determines its effectiveness across different environments. WiFi, 
+with its capability for substantial coverage, is well-suited for a variety of applications, 
+both indoors and outdoors. Zigbee also offers a wide coverage area, making it ideal for sensor 
+networks spread across a large area. In contrast, NFC is designed for very short-range interactions, 
+typically a few centimeters, making it perfect for secure, close-proximity tasks such as payments 
+and quick data exchanges.
+
+![Range](./images/protocols_range.png)
+
+### Data Rate Capabilities
+Data rate is a crucial factor for applications requiring fast data transmission. WiFi excels in 
+this area, supporting high data rates that are ideal for streaming and other data-intensive 
+applications. On the other hand, Bluetooth LE is designed to provide a balance between efficient 
+power consumption and adequate data rates, making it suitable for IoT devices that prioritize energy 
+efficiency. Zigbee, with its focus on low-power sensor networks, offers lower data rates, which is 
+sufficient for the transmission of small amounts of data over a network designed for efficiency and 
+longevity.
+
+![Data Rate](./images/protocols_datarate.png)
+
+### Frequency Utilization
+The choice of frequency band impacts a protocol's susceptibility to interference and its ability to 
+coexist with other wireless technologies. Both WiFi and Bluetooth predominantly operate in the 2.4 GHz 
+band, a common frequency that is shared by many devices, leading to a higher potential for interference. 
+Zigbee also operates in the 2.4 GHz band but is designed to efficiently manage coexistence with other 
+technologies in this crowded space. Z-Wave, by contrast, utilizes the 800-900 MHz frequency band, 
+which is generally less congested, offering advantages in terms of reduced interference and improved 
+reliability for home automation systems.
+
+![Frequency](./images/protocols_frequency.png)
+
+### Security Considerations
+Security is a paramount concern in IoT applications, where the integrity and confidentiality of data must 
+be safeguarded. Each wireless protocol incorporates distinct security features tailored to its use cases.
+
+- **WiFi** employs WPA3 encryption, providing comprehensive security with
+complex cipher suites for data protection and user authentication, suitable
+for bandwidth-intensive environments.
+
+- **Bluetooth** incorporates Adaptive Frequency Hopping and ECDH key exchange 
+for enhanced security, facilitating encrypted communications in personal and 
+commercial settings.
+
+- **Bluetooth LE** extends Bluetooth's security features with LE Secure 
+Connections, including FIPS-approved algorithms for encryption and secure 
+key distribution, optimizing for power efficiency.
+
+- **Zigbee** uses network and link key encryption, frame counters to prevent replay attacks, and AES for application-level 
+encryption. It employs MACs for data integrity and a trust center for key management and device authentication, 
+ensuring comprehensive security.
+
+- **Z-Wave** uses AES-128 encryption and Secure S2 framework for advanced 
+network security, ensuring encrypted communication in smart home applications 
+with minimal power usage.
+
+- **NFC** utilizes advanced encryption (AES, RSA, ECC) tailored to specific security needs, with authentication to ensure secure 
+device connections. It enhances privacy through random addressing, reducing trackability. The inherent short range limits 
+interception risks, while a secure element and TEE offer additional protection for sensitive transactions and operations, 
+ensuring robust security
+
+Security in wireless communication protocols is continuously evolving to address emerging threats and vulnerabilities. 
+Choosing a protocol with adequate security features is essential for building trustworthy IoT systems that users can rely on.
+
+
+### Conclusion: Choosing the Right Wireless Protocol for IoT
 Selecting a wireless protocol is crucial, with each serving specific IoT needs.
 The choice hinges on application, range, throughput, power, and interoperability.
 This report aims to help IoT developers in making protocol choices, the key to efficient and
 scalable IoT solutions. Embracing the right protocol is strategic, essential for
 IoT innovation and advancement.
+
+### About This PDF
+This PDF was generated using a Continuous Integration (CI) pipeline, leveraging Python scripts 
+for merging markdown files and creating diagrams, followed by a markdown-to-PDF conversion process. 
+This automated workflow ensures the report is always up-to-date with the latest contributions from 
+all authors. For more information and to contribute to this report, visit the GitHub repository: 
+[https://github.com/simonthorell/wl-iot-protocols-report](https://github.com/simonthorell/wl-iot-protocols-report).

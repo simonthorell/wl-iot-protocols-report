@@ -28,7 +28,7 @@ def main():
         # Add a new line between each markdown file content
         if first_replacement:
             # For the first replacement, remove the leading newline to avoid an extra line at the beginning
-            content = content.lstrip("\n<br/>\n")
+            content = content.lstrip("\n")
             first_replacement = False
         report_content = report_content.replace(f'{{{protocol}}}', content)
     
