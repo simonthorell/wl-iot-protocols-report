@@ -17,6 +17,24 @@
         "frequency": "2.4 GHz, 5 GHz",
         "range": "50 meters",
         "dataRate": "54 Mbps - 1.3 Gbps"
+      },
+      {
+        "name": "NFC",
+        "frequency": "13.56 MHz",
+        "range": "0-20 cm",
+        "dataRate": "106 Kbps - 424Kbps"
+      },
+      {
+        "name": "Bluetooth LE",
+        "frequency": "2.4 GHz",
+        "range": "10-100 meters",
+        "dataRate": "125 Kbps - 2 Mbps"
+      },
+      {
+        "name": "Z-Wave",
+        "frequency": "800-900 MHz",
+        "range": "30-100 meters",
+        "dataRate": "9.6 Kbps - 100 Kbps"
       }
     ]
   }
