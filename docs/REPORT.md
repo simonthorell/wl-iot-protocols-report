@@ -282,6 +282,7 @@ NFC technology brings numerous benefits and factors to consider for its integrat
 
 The combination of short-range, contactless communication, low power consumption, security, and user-friendliness makes NFC a suitable choice for specific IoT applications.
 
+<br>
 ## 
 
 ## Protocol Summary
