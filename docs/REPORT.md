@@ -18,7 +18,7 @@ in making informed decisions for IoT applications.
 Simon Thorell, Erik Pettersson, Nathan Tewelde Bahta, 
 Milad Isho Saeb and Abdihakim Abdisamad Roble.  
   
-**Report Last Updated:** 2024-02-09
+**Report Last Updated: ** 2024-02-09
 
 ## 
 
