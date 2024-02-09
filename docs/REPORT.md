@@ -24,29 +24,30 @@ Milad Isho Saeb and Abdihakim Abdisamad Roble.
 
 ### WiFi - Protocol Overview:
 
-WiFi, short for wireless fidelity, is a widely used wireless communication protocol that enables devices to connect and communicate over a local area network (LAN) without the need for physical cables. It operates in the 2.4 GHz and 5 GHz frequency bands and supports high data transfer rates.
 
-### Range:
+WiFi or Wireless Fidelity is a popular wireless communication protocol allowing devices to detect and communicate over a local area network (LAN) without the use of cables. The device works in two frequency bands, 2.4 GHz and 5 GHz, providing high data rates.
 
-WiFi offers a robust range, typically up to 30 meters indoors and 100 meters outdoors, making it suitable for various applications, from home networking to larger installations.
 
-### Power Consumption:
+### Range
+Usually, WiFi provides a powerful coverage, that is, within 30 meters indoors and 100 meters outdoors. It ensures its appropriateness in different applications, ranging from home networking to larger scale deployments.
 
-One drawback of WiFi is its relatively high power consumption compared to other low-power wireless protocols. This factor can be critical for IoT devices relying on battery power.
 
-### Security:
+### Power Consumption
+With WiFi, one of the issues is its high power consumption against low power wireless protocols. This is a determining parameter for battery-powered IoT devices.
 
-WiFi provides various security mechanisms to protect data during transmission. Common security protocols include WEP (Wired Equivalent Privacy), WPA (WiFi Protected Access), and the more advanced WPA2/WPA3. These protocols support encryption and authentication methods, enhancing communication security.
 
-### Further Considerations for the IoT:
+### Security
+WiFi has many security means by which it secures the data during its transmission. Standard security protocols are WEP (Wired Equivalent Privacy), WPA (WiFi Protected Access), and the more advanced WPA2/WPA3. These protocols are encryption and authentication methods of the secure communication.
 
-WiFi supports simultaneous connections from multiple devices, making it suitable for scenarios with numerous connected devices. WiFi-enabled IoT devices can utilize existing infrastructure in homes and businesses, simplifying deployment.
 
-### Conclusion:
+### Other Considerations for IoT:
 
-WiFi is a versatile and widely used wireless protocol with an excellent range and high data transfer rates. Its suitability for IoT applications depends on specific requirements, taking into account power consumption and the need for high-speed data transmission. Additionally, the robust security features make WiFi a secure option for various IoT deployments.
+This is best for the IoT applications that require high data speeds.
+It allows more than one device to be connected at the same time, hence is appropriate for scenarios with several connected devices.
+WiFi-enabled IoT devices can reuse the already existing infrastructure available in households and businesses, thus making deployment straightforward.
+Conclusion:
+WiFi is an all-around, very popular wireless protocol, which has a great range, and excellent data transfer rates. Its suitability to IoT applications relies on particular requirements, considering power consumptions and the requirement of fast data transfer. Also, the powerful security features of WiFi create it a secured destination for numerous IoT implementations.
 
-<br><br>
 ## Bluetooth
 
 Here is some text...
