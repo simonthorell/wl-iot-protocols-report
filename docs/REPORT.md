@@ -47,7 +47,6 @@ WiFi supports simultaneous connections from multiple devices, making it suitable
 ### Conclusion:
 
 WiFi is a versatile and widely used wireless protocol with an excellent range and high data transfer rates. Its suitability for IoT applications depends on specific requirements, taking into account power consumption and the need for high-speed data transmission. Additionally, the robust security features make WiFi a secure option for various IoT deployments.
-
 <br><br>
 ## Bluetooth
 
@@ -123,8 +122,7 @@ simplifies the process of integrating BLE into IoT applications, from conceptual
 backed by a large and active community.
 
 BLE's combination of low power consumption, secure communication, and extensive support makes
-it a cornerstone technology for the burgeoning IoT landscape, enabling a new generation of connected
-applications that are both energy-efficient and secure.
+it a cornerstone technology for the burgeoning IoT landscape, enabling a new generation of connected applications that are both energy-efficient and secure.
 <br><br>
 ## Zigbee
 
@@ -273,9 +271,7 @@ selection, accommodating a wide spectrum of automation needs.
 - **Dedicated Operational Frequency:** Z-Wave operates on designated frequency bands (908.42 MHz
 in the US, with variations globally), mitigating interference from other household wireless technologies.
 
-Z-Wave's synthesis of efficient power use, robust security architecture, and unmatched interoperability
-positions it as a technology of choice for integrating smart home and broader IoT solutions, paving the
-way for advanced home automation.
+Z-Wave's synthesis of efficient power use, robust security architecture, and unmatched interoperability positions it as a technology of choice for integrating smart home and broader IoT solutions, paving the way for advanced home automation.
 <br><br>
 ## NFC (Near Field Communication) 
 
