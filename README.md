@@ -52,3 +52,6 @@ This repository is designed to facilitate collaborative work on a comprehensive 
 
 - **CI Completion:**
   Due to a GitHub Actions/Workflows limitation, wait for all CI pipeline jobs to complete successfully before merging your pull request into the main branch. Merging prematurely might result in your changes not being correctly reflected in the master files.
+
+- **Squash Merging Pulll Requests:**
+  To keep commit history clean in the main branch, all commits from the feature branched will be squashed to a `single commit message` in main using the `pull request title`.

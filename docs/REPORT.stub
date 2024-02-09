@@ -32,8 +32,7 @@ Milad Isho Saeb and Abdihakim Abdisamad Roble.
 <br><br>
 {NFC}
 
-<br>
-## 
+##  
 
 ## Protocol Summary
 - **WiFi** emerges as the go-to choice for high-bandwidth applications requiring internet access, 
@@ -92,7 +91,7 @@ for enhanced security, facilitating encrypted communications in personal and
 commercial settings.
 
 - **Bluetooth LE** extends Bluetooth's security features with LE Secure 
-Connections, including FIPS-approved algorithms for encryption and secure 
+Connections (security layers), including FIPS-approved algorithms for encryption and secure 
 key distribution, optimizing for power efficiency.
 
 - **Zigbee** uses network and link key encryption, frame counters to prevent replay attacks, and AES for application-level 
@@ -101,7 +100,8 @@ ensuring comprehensive security.
 
 - **Z-Wave** uses AES-128 encryption and Secure S2 framework for advanced 
 network security, ensuring encrypted communication in smart home applications 
-with minimal power usage.
+with minimal power usage. Z-Wave also enhance network security though a rigorous 
+device authentication process. 
 
 - **NFC** utilizes advanced encryption (AES, RSA, ECC) tailored to specific security needs, with authentication to ensure secure 
 device connections. It enhances privacy through random addressing, reducing trackability. The inherent short range limits 
