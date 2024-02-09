@@ -8,7 +8,7 @@ such as range, data rate, power consumption, and security, to aid stakeholders
 in making informed decisions for IoT applications.
 
 ### Areas to Investigate
-- Protocol Cverwiev
+- Protocol Overwiev
 - Range
 - Power Consumption
 - Security
@@ -19,7 +19,7 @@ Simon Thorell, Erik Pettersson, Nathan Tewelde Bahta,
 Milad Isho Saeb and Abdihakim Abdisamad Roble.
 
 ## 
-
+-
 ## WIFI
 
 Here is some text...
