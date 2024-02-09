@@ -47,5 +47,4 @@ simplifies the process of integrating BLE into IoT applications, from conceptual
 backed by a large and active community.
 
 BLE's combination of low power consumption, secure communication, and extensive support makes
-it a cornerstone technology for the burgeoning IoT landscape, enabling a new generation of connected
-applications that are both energy-efficient and secure.
+it a cornerstone technology for the burgeoning IoT landscape, enabling a new generation of connected applications that are both energy-efficient and secure.
