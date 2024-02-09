@@ -1,4 +1,5 @@
 from pathlib import Path
+from datetime import datetime
 
 def load_protocol_content(protocol_name, protocols_path='protocols'):
     """
@@ -31,7 +32,11 @@ def main():
             content = content.lstrip("\n")
             first_replacement = False
         report_content = report_content.replace(f'{{{protocol}}}', content)
-    
+
+    # Replace the {DATE} tag with the current date in the format YYYY-MM-DD
+    current_date = datetime.now().strftime("%Y-%m-%d")
+    report_content = report_content.replace("{DATE}", current_date)
+
     # Save the updated content to REPORT.md
     report_path.write_text(report_content)
 
