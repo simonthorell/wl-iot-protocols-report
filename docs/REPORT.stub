@@ -19,24 +19,34 @@ Simon Thorell, Erik Pettersson, Nathan Tewelde Bahta,
 Milad Isho Saeb and Abdihakim Abdisamad Roble.
   
 **Report Last Updated:** {DATE}
-
+  
 ## 
-
+  
 {WIFI}
-<br><br>
+  
+## 
+  
 {BLUETOOTH}
-<br><br>
+  
+## 
+  
 {BLUETOOTH_LE}
-<br><br>
+  
+## 
+  
 {ZIGBEE}
-<br><br>
+  
+## 
+  
 {ZWAVE}
-<br><br>
+  
+## 
+  
 {NFC}
-
+  
 ##  
-
-## Protocol Summary
+  
+# Report Summary
 - **WiFi** emerges as the go-to choice for high-bandwidth applications requiring internet access, 
 although at the cost of higher power consumption.
 - **Bluetooth** and **Bluetooth LE** offer versatility, with BLE being particularly advantageous 

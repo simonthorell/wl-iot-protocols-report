@@ -19,9 +19,9 @@ Simon Thorell, Erik Pettersson, Nathan Tewelde Bahta,
 Milad Isho Saeb and Abdihakim Abdisamad Roble.
   
 **Report Last Updated:** 2024-02-09
-
+  
 ## 
-
+  
 ## WIFI
 ### WiFi - Protocol Overview:
 
@@ -50,7 +50,9 @@ WiFi-enabled IoT devices can reuse the already existing infrastructure available
 Conclusion:
 WiFi is an all-around, very popular wireless protocol, which has a great range, and excellent data transfer rates. Its suitability to IoT applications relies on particular requirements, considering power consumptions and the requirement of fast data transfer. Also, the powerful security features of WiFi create it a secured destination for numerous IoT implementations.
 
-<br><br>
+  
+## 
+  
 ## Bluetooth
 
 Bluetooth is commonly used for short-range wireless communications in modern electronics. The report covers Bluetooth protocol, range, power consumption, security and its importance in the Internet of Things (IoT).
@@ -72,7 +74,9 @@ Bluetooth’s interoperability, low cost, and low power consumption make it suit
 
 In summary, Bluetooth is critical for wireless connectivity in various applications, including the Internet of Things. Understanding its capabilities can help you make informed implementation decisions. Continuous improvements in standards and security ensure its relevance in wireless communications.
 
-<br><br>
+  
+## 
+  
 ## Bluetooth LE (Low Energy)
 
 Bluetooth Low Energy (BLE), enabled in Bluetooth 4.0, marks a significant evolution in the
@@ -124,7 +128,9 @@ backed by a large and active community.
 BLE's combination of low power consumption, secure communication, and extensive support makes
 it a cornerstone technology for the burgeoning IoT landscape, enabling a new generation of connected
 applications that are both energy-efficient and secure.
-<br><br>
+  
+## 
+  
 ## Zigbee
 
 Zigbee is a short-range protocol with high scaleability for use of upwards to 65000 units.
@@ -223,7 +229,9 @@ garage doors, lamps, smoke alarms, monitoring water usage and such. That doesn't
 in distance between the devices and as little as possible obstacles between the devices for the best signal.
 It can also be used for industrial automation and monitoring different sensors outside. But be aware that
 it needs to be some kind of amplifier to make the signal reach longer outside. Also to take in to consideration is that you need a pretty good understanding in IT to use the protocol to it's full potential. Over all the protocol is very secure to use in the sense that the protocol is both backed and used by companies such as Amazon, Google, Philips, Siemens etc. The protocol uses "CIA" in different layers and can be configure to suit the specific use case for the admin or admins on the network.
-<br><br>
+  
+## 
+  
 ## Z-Wave
 
 Z-Wave is a wireless communications protocol used primarily for home automation. It is designed to allow smart devices to communicate with each other within the home via low-energy radio waves. Developed by Zensys, a Danish company, it is now managed by the Z-Wave Alliance, a consortium of over 700 companies dedicated to the development of Z-Wave technology.
@@ -275,7 +283,9 @@ in the US, with variations globally), mitigating interference from other househo
 Z-Wave's synthesis of efficient power use, robust security architecture, and unmatched interoperability
 positions it as a technology of choice for integrating smart home and broader IoT solutions, paving the
 way for advanced home automation.
-<br><br>
+  
+## 
+  
 ## NFC (Near Field Communication) 
 
 NFC is a short-range wireless communication technology operating at 13.56 MHz, and the NFC Forum has helped to both define and promote the technology commonly used in access pairing, contactless transactions, device pairing, mobile payments, and ticketing. This is because it facilitates communication between devices when those are brought within proximity of each other, typically a few centimeters. 
@@ -318,10 +328,10 @@ NFC technology brings numerous benefits and factors to consider for its integrat
 3) User-Friendly: NFC is known for its user-friendliness and requires minimal installation or configuration.
 
 The combination of short-range, contactless communication, low power consumption, security, and user-friendliness makes NFC a suitable choice for specific IoT applications.
-
+  
 ##  
-
-## Protocol Summary
+  
+# Report Summary
 - **WiFi** emerges as the go-to choice for high-bandwidth applications requiring internet access, 
 although at the cost of higher power consumption.
 - **Bluetooth** and **Bluetooth LE** offer versatility, with BLE being particularly advantageous 
